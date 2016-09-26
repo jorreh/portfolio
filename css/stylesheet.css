@@ -1,0 +1,584 @@
+
+/*Import Bootstrap stylesheet*/
+@import url(bootstrap.css);
+
+/*My custom styles*/
+
+@font-face {
+  font-family: AvenirNextLTPro-UltLt;
+  src: url('../fonts/AvenirNextLTPro-UltLt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Alter;
+  src: url('../fonts/Alter.otf') format('opentype');
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('../fonts/HelveticaNeueLTPro-Th.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Montserrat-Hairline;
+  src: url('../fonts/Montserrat-Hairline.otf') format('opentype');
+}
+
+
+
+/********************** html classes ********** */
+
+a {
+  /*remove dotted selection border in Firefox*/
+  outline: 1px none !important;
+}
+
+a.active{
+  text-decoration: underline;
+  color:#b2b2b2;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+  background-color: #202020;
+  height: 100%;
+}
+
+/* fonts */
+h1{
+  font-family: AvenirNextLTPro-UltLt, Lato;
+  font-weight: 300;
+  color:#b2b2b2;
+  font-size: 14pt;
+}
+
+h2{
+  font-family: AvenirNextLTPro-UltLt, Lato;
+  color:#b2b2b2;
+  font-size: 12pt;
+  font-weight: 100;
+  margin:0%;
+  margin-bottom: 0.4%;
+}
+
+/********************** BOOTSTRAP CLASSES ********** */
+
+.col-lg-4, .col-lg-3 {
+  padding: 5px;
+}
+
+/*** Navigation ***/
+
+/* navbar */
+.navbar-default {
+  background-color: transparent;
+  border-style: none;
+  height: 40px;
+  margin-bottom: 0;
+  min-height: 40px;
+  pointer-events: none;
+}
+
+.navbar-default .navbar-nav > li {
+  color:#b2b2b2;
+}
+
+/* hyperlinklinks */
+.navbar-default .navbar-nav > li > a {
+ margin-bottom: 0;
+ padding: 0 8% 0 8%;
+ color:#b2b2b2;
+ font-family: Verdana , Sans-Serif;
+ pointer-events:auto;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  text-decoration: underline;
+  color:#b2b2b2;
+  }
+
+  .navbar-default .navbar-nav > li > a:active {
+  text-decoration: underline;
+  color:#b2b2b2;
+  }
+
+/* hyperlinklink :hover */
+.navbar-default .navbar-nav > li > a:hover {
+  text-decoration: underline;
+  color:#b2b2b2;
+}
+
+.carousel-inner {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+}
+
+
+/*******************  Header  *************************/
+
+header{
+  width : 100%;
+  height:100vh;
+  background-color : #202020;
+  overflow:auto;
+}
+
+#home{
+   width : 100%;
+  height:100vh;
+  background-color : #202020;
+  overflow:auto;
+}
+
+/* Navigation */
+.navwrapper{
+  float:right;
+  padding-right: 2%;
+  margin-top: 0.5%;
+  display: inline-block;
+}
+
+.logo { 
+  width: 14%;
+  height:14%;
+  margin-top: 3%;
+}
+
+.headerwrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.vertical-center{
+  position: absolute;
+  top:50%;
+  left:0;
+  right: 0;
+  margin:0;
+  padding:0;
+  line-height: 14pt;
+  transform:translate(0,-50%);
+}
+
+#naam{
+ width:200px;
+ height:auto;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.skills{
+  margin-top: 5em;
+}
+
+.bgimg{
+  position: absolute;
+  margin-left: 0%;
+  margin-right: 0%;
+  bottom:0px; 
+}
+
+/*** ARROW ***/
+
+.arrow-wrap {
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index:1;
+  margin-bottom: 0.1%;
+  background:#202020;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:4pt;
+  bottom:0px;
+  display:block;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent ;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #202020 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+/* arrow animation */
+
+@-webkit-keyframes arrows {
+  0% { bottom:0%; }
+  10% { bottom:2%; }
+  20% { bottom:1%; }
+  30% { bottom:2%; }
+  40% { bottom:1%; }
+  50% { bottom:2%; }
+  60% { bottom:1%; }
+  70% { bottom:2%; }
+  80% { bottom:1%; }
+  90% { bottom:2%; }
+  100% { bottom:0; }
+}
+
+@-moz-keyframes arrows{
+  0% { bottom:0%; }
+  10% { bottom:2%; }
+  20% { bottom:1%; }
+  30% { bottom:2%; }
+  40% { bottom:1%; }
+  50% { bottom:2%; }
+  60% { bottom:1%; }
+  70% { bottom:2%; }
+  80% { bottom:1%; }
+  90% { bottom:2%; }
+  100% { bottom:0; }
+}
+
+.arrow-wrap  {
+  -webkit-animation: arrows 2.8s 0.4s;
+  -webkit-animation-delay: 3s; 
+  -moz-animation: arrows 2.8s 0.4s;
+  -moz-animation-delay: 3s;
+}
+
+/*******************  Work  *************************/
+
+.work{
+  width : 100%;
+  min-height: 100vh;
+  background-color : #202020;
+  height: auto;
+}
+
+.container-fluid{
+  padding:0;
+}
+
+.thumbnailcontainer{
+  padding-left:1.4%;
+  padding-right:1.4%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbnail{
+  padding:0;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0 ;
+}
+
+/*** HOVER EFFECT ***/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -moz-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.1);
+  -webkit-filter: brightness(0.1);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 27px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 40% 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  padding-bottom: 0.5em;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  -moz-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  font-family: HelveticaNeue;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  -moz-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Modal window */
+
+.modal-content{
+  padding:2%;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-style:none;
+}
+
+.modal_hr{
+  margin: 0;
+}
+
+.mymodalcontent{
+  margin-bottom: 4%;
+}
+
+.modaltitle{
+  font-family: AvenirNextLTPro-UltLt, Lato;
+  font-size: 28pt;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.notoppadding{
+  padding-top: 0;
+}
+
+.modal_goback{
+  margin-top: 2%;
+}
+
+.backarrow{
+  width: 17%;
+  height:17%;
+}
+
+.backarrow:hover{
+  border-bottom: 1px solid #b2b2b2;
+  margin-bottom: -1px;
+}
+
+.modal_links{
+  color: #b2b2b2;
+  /*font-family: HelveticaNeue;*/
+  font-family: Montserrat-Hairline;
+  font-size: 14pt;
+  text-decoration: underline;
+ /* margin-top: 8%;*/
+}
+
+.modal_links:hover{
+  color: #B2B2B2;
+}
+
+.videoMarginBottom{
+  margin-bottom: 4.3%;
+}
+
+/*******************  About  *************************/
+
+.about{
+  /*position: relative;*/
+  width : 100%;
+  min-height:100vh;
+  height:auto;
+  background-color: #242424;
+  overflow:hidden;
+}
+
+.logo_about{
+  width: 15%;
+}
+
+.about_titles{
+  font-size: 24pt;
+  font-weight: 100;
+  margin-bottom: 1%;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  color: #b2b2b2; 
+  background-color: #b2b2b2; 
+  margin: 0;
+  padding: 0;
+  width:100%;
+  margin-bottom: 3%;
+}
+
+.abouttext{
+  color: #b2b2b2;
+  font-family: Montserrat-Hairline;
+  font-size: 14pt;
+}
+
+.modaltext{
+  font-size: 13pt;
+}
+
+.twoColumns{
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+}
+
+.about_subtitles{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14pt;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.transparent_bg{
+  background-color: transparent;
+}
+
+.about_leftcol{
+  padding-right: 6%;
+  margin-top: 5%;
+}
+
+.about_rightcol{
+  padding-left: 6%;
+  margin-top: 18%;
+}
+
+.nopad{
+  padding-left: 1%;
+}
+
+/*******************  Contact  *************************/
+
+.contact{
+  width : 100%;
+  height:auto;
+  background-color : #262626;
+  padding: 1%;
+}
+
+.mailicon{
+  width:30%;
+  height: 30%;
+}
+
+/*******************  MEDIA QUERIES  *************************/
+
+/* Smartphone: padding on text in modal window */
+@media(max-width:1199px){
+  .notoppadding{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .backarrow{
+  width: 13%;
+  height:13%;
+  }
+}
+
+
+@media(max-width:991px){
+  .notoppadding{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .backarrow{
+  width: 16%;
+  height:16%;
+  }
+}
+
+@media(max-width:767px){
+  .backarrow{
+  width: 18%;
+  height:18%;
+  }
+}
+
+@media(max-width:500px){
+  .backarrow{
+  width: 25%;
+  height:25%;
+  }
+}
+
+
